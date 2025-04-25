@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="ventanaVotacionesFx" prefHeight="720.0" prefWidth="1018.0" style="-fx-background-radius: #bfbfbf;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.iuserdesk.controller.IndexController">
+   <children>
+      <Pane layoutX="31.0" layoutY="6.0" opacity="0.72" prefHeight="690.0" prefWidth="980.0" style="-fx-background-color: e1e1e1;">
+         <children>
+            <Button fx:id="botonVotarFx" contentDisplay="CENTER" graphicTextGap="3.0" layoutX="113.0" layoutY="496.0" mnemonicParsing="false" onAction="#agregarVotoDB" prefHeight="44.0" prefWidth="159.0" text="Click para Votar!">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8199999928474426" green="0.01640000008046627" blue="0.5714043378829956" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5189003436426117">
+                           <color>
+                              <Color red="0.7699999809265137" green="0.25648200511932373" blue="0.07699999958276749" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.3799999952316284" green="0.1785999983549118" blue="0.3568172752857208" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill></Button>
+            <Label layoutX="44.0" layoutY="197.0" lineSpacing="1.0" prefHeight="44.0" prefWidth="168.0" text="Nombre Votante" textFill="#d4028e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <Label layoutX="44.0" layoutY="341.0" lineSpacing="1.0" prefHeight="35.0" prefWidth="225.0" text="Seleccion de Candidato" textFill="#d5028e">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Label>
+            <TextField fx:id="nombreVotanteFx" layoutX="44.0" layoutY="241.0" prefHeight="35.0" prefWidth="297.0" />
+            <ChoiceBox fx:id="seleccionDeCandidatoFx" layoutX="44.0" layoutY="384.0" prefHeight="35.0" prefWidth="297.0" />
+            <Pane layoutX="705.0" layoutY="20.0" prefHeight="150.0" prefWidth="191.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="/fxml/images/Logo_del_INE_(sin_texto).svg.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Pane>
+         </children></Pane>
+      <BarChart fx:id="graficaVotosFx" alternativeRowFillVisible="false" animated="false" horizontalGridLinesVisible="false" horizontalZeroLineVisible="false" layoutX="486.0" layoutY="190.0" prefHeight="449.0" prefWidth="505.0" title="RESULTADOS EN TIEMPO REAL" verticalGridLinesVisible="false" verticalZeroLineVisible="false">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </BarChart>
+      <Label layoutX="203.0" layoutY="26.0" prefHeight="116.0" prefWidth="496.0" text="Sistema de Votantes" textFill="#d5028e">
+         <font>
+            <Font name="Arial Black" size="41.0" />
+         </font>
+      </Label>
+      <Pane layoutY="5.0" prefHeight="715.0" prefWidth="17.0" style="-fx-background-color: #d5028e;" />
+      <Pane layoutY="709.0" prefHeight="15.0" prefWidth="1012.0" style="-fx-background-color: #d5028e;" />
+   </children>
+</AnchorPane>
