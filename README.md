@@ -1,7 +1,7 @@
 ## Diagrama de secuencia
 
 
-![Diagrama del sistema]()
+![Diagrama del sistema](gfdgdg.jpg)
 
 
 | Componente             | Capa                    | Tecnología         | Rol funcional                    |
